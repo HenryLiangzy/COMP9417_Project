@@ -1,0 +1,10 @@
+# for folder
+.vscode/
+.ipynb_checkpoints/
+
+# for system
+.DS_Store
+
+# for output/excute file
+.out
+.o
