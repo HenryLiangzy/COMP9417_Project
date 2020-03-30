@@ -51,4 +51,4 @@ git clone https://github.com/HenryLiangzy/COMP9417_Project.git
 6. Keras
 
 # LICENSE
-[MIT](https://github.com/HenryLiangzy/COMP9417_Project/blob/master/LICENSE) @HenryLiangzy
+[Apache 2.0](https://github.com/HenryLiangzy/COMP9417_Project/blob/master/LICENSE) @HenryLiangzy @BradWWHU @raymondluk1995 @zyq0711 @syzxy
