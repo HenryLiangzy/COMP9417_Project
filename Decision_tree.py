@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
-# Henry's work
-# Please do not modify it
-# Last modify: 6th Apr, 2020
+'''
+Henry's work
+Please DO NOT modify it
+Last modify: 6th Apr, 2020
+'''
 
 import numpy as np
 import pandas as pd
