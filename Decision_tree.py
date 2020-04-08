@@ -76,9 +76,9 @@ def main():
     print("Start training")
     start_time = time.time()
 
-    # # train
-    # test_record = []
-    # trianing_record = []
+    # train
+    test_record = []
+    trianing_record = []
 
     dtc = DecisionTreeClassifier()
     dtc.fit(train_x, train_y)
@@ -89,16 +89,26 @@ def main():
     print("The accuracy of Test set is:", dtc.score(test_x, test_y))
     print("Training time: {} s".format(end_time-start_time))
 
-    # Part B: search min_samples_leaf between 2~20
+    prediction = dtc.predict_proba(test_x)
+    fpr, tpr, thresholds = roc_curve(test_y, prediction[:,1])
+    auc = metrics.auc(fpr, tpr)
+    print("Current AUC is:", auc)
+
+    # test_record = []
+    # trianing_record = []
     # train_min_samples_leaf_value = 0
     # train_max_auc = 0
+    # best_model = None
 
     # min_samples_leaf_value = 0
     # max_auc = 0
-    # leaf_value_range = range(2, 21)
+    # leaf_value_range = range(1, 21)
     # for leaf_value in leaf_value_range:
+    #     print("fiting with leaf value = {} ......".format(leaf_value), end="")
     #     model = DecisionTreeClassifier(min_samples_leaf=leaf_value)
     #     model.fit(train_x, train_y)
+        
+    #     print("Done!")
 
     #     prediction = model.predict_proba(test_x)
     #     t_prediction = model.predict_proba(train_x)
@@ -113,6 +123,7 @@ def main():
     #     if auc > max_auc:
     #         max_auc = auc
     #         min_samples_leaf_value = leaf_value
+    #         best_model = model
     #     if t_auc > train_max_auc:
     #         train_max_auc = t_auc
     #         train_min_samples_leaf_value = leaf_value
@@ -121,6 +132,8 @@ def main():
     # print("With max AUC by TEST is:", max_auc)
     # print("The optimal number of min_samples_leaf by TRAINING set is:", train_min_samples_leaf_value)
     # print("With max AUC by TRAINING is:", train_max_auc)
+    # print("The accuracy of BEST model in Training set is:", best_model.score(train_x, train_y))
+    # print("The accuracy of BEST model in Test set is:", best_model.score(test_x, test_y))
 
 
     # plt.style.use('ggplot')
@@ -138,7 +151,7 @@ def main():
     # ax2.set_ylabel('AUC')
     
     # plt.show()
-    # #plt.savefig('figure/Assignment2_Q2_part_C.png')
+    # plt.savefig('figure/Assignment2_Q2_part_C.png')
     
 
 if __name__ == "__main__":
