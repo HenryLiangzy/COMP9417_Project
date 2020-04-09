@@ -1,0 +1,19 @@
+1.Model预测Forex Market和Money Market的时候会混淆两者怎么处理？
+答：现在没有确定的方法去处理，只能选择词去训练。
+2. Neural Network训练：
+Tuning kernels hyperparameters could be a good option.
+3.每个词都是一个feature，需要筛选出有用的词做训练
+4.Feature selection （即选词）： 
+	1) feature reducing, aka reducing words
+	2) 使用PCA去选词
+	3）sklearn包中的feature importance去比较哪些词重要
+	4）去除"_"等无关词
+5.Accuracy Level: 当accuracy大于 majority class的比例时，即可接受
+  至于 F1 Score 和 Recall rate 因为和 accuracy有关联，不用拿这两个去和某些特定数值做比较
+6.即使AUC分数高，只要accuracy低，我们就不用管AUC score
+7.IRRELEVANT 的问题：
+	1）训练集一定要带上 IRRELEVANT
+	2）老师没有去操作数据集，但是肯定了先predict 数据标签是 relevant 还是 irrelevant，然后再从relevant标签的数据中进一步判断是什么具体标签的做法，即训练两个模型。
+8.老师偏向于tfidf，不过countvectorizer值得一试。对于countvectorizer的min_df参数，需要跑gridsearch找出最佳
+9.老师认同SMOTE解决imbalance，但是需要在作业中提到SMOTE的副作用是increase noise in data
+10.老师重复提到PCA选feature，可以研究一下这个东西
