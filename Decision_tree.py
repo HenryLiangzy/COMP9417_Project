@@ -74,11 +74,10 @@ def main():
     print(test_x.shape)
     print(test_y.shape[0])
     print("Start training")
-    start_time = time.time()
+    # start_time = time.time()
 
     # train
     test_record = []
-    trianing_record = []
 
     # dtc = DecisionTreeClassifier()
     # dtc.fit(train_x, train_y)
@@ -95,9 +94,6 @@ def main():
     # print("Current AUC is:", auc)
 
     test_record = []
-    trianing_record = []
-    train_min_samples_leaf_value = 0
-    train_max_auc = 0
     best_model = None
 
     min_samples_leaf_value = 0
@@ -127,11 +123,10 @@ def main():
 
     plt.style.use('ggplot')
     fig = plt.figure(figsize=(12, 6))
-    ax1 = fig.add_subplot(11
-    1)
+    ax1 = fig.add_subplot(111)
     ax1.plot(leaf_value_range, test_record)
     ax1.set_title('AUC in TEST set')
-    ax1.set_xlabel('iterations')
+    ax1.set_xlabel('Min_samples_leaf_value')
     ax1.set_ylabel('AUC')
     
     plt.show()
