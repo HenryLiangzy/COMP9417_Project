@@ -80,77 +80,61 @@ def main():
     test_record = []
     trianing_record = []
 
-    dtc = DecisionTreeClassifier()
-    dtc.fit(train_x, train_y)
+    # dtc = DecisionTreeClassifier()
+    # dtc.fit(train_x, train_y)
 
-    end_time = time.time()
+    # end_time = time.time()
 
-    print("The accuracy of Training set is:", dtc.score(train_x, train_y))
-    print("The accuracy of Test set is:", dtc.score(test_x, test_y))
-    print("Training time: {} s".format(end_time-start_time))
+    # print("The accuracy of Training set is:", dtc.score(train_x, train_y))
+    # print("The accuracy of Test set is:", dtc.score(test_x, test_y))
+    # print("Training time: {} s".format(end_time-start_time))
 
-    prediction = dtc.predict_proba(test_x)
-    fpr, tpr, thresholds = roc_curve(test_y, prediction[:,1])
-    auc = metrics.auc(fpr, tpr)
-    print("Current AUC is:", auc)
+    # prediction = dtc.predict_proba(test_x)
+    # fpr, tpr, thresholds = roc_curve(test_y, prediction[:,1])
+    # auc = metrics.auc(fpr, tpr)
+    # print("Current AUC is:", auc)
 
-    # test_record = []
-    # trianing_record = []
-    # train_min_samples_leaf_value = 0
-    # train_max_auc = 0
-    # best_model = None
+    test_record = []
+    trianing_record = []
+    train_min_samples_leaf_value = 0
+    train_max_auc = 0
+    best_model = None
 
-    # min_samples_leaf_value = 0
-    # max_auc = 0
-    # leaf_value_range = range(1, 21)
-    # for leaf_value in leaf_value_range:
-    #     print("fiting with leaf value = {} ......".format(leaf_value), end="")
-    #     model = DecisionTreeClassifier(min_samples_leaf=leaf_value)
-    #     model.fit(train_x, train_y)
+    min_samples_leaf_value = 0
+    max_auc = 0
+    leaf_value_range = range(1, 21)
+    for leaf_value in leaf_value_range:
+        print("fiting with leaf value = {} ......".format(leaf_value), end="")
+        model = DecisionTreeClassifier(min_samples_leaf=leaf_value)
+        model.fit(train_x, train_y)
         
-    #     print("Done!")
+        print("Done!")
 
-    #     prediction = model.predict_proba(test_x)
-    #     t_prediction = model.predict_proba(train_x)
-    #     fpr, tpr, thresholds = roc_curve(test_x, prediction[:,1])
-    #     t_fpr, t_tpr, t_thresholds = roc_curve(train_y, t_prediction[:,1])
+        prediction = model.predict_proba(test_x)
+        auc = roc_auc_score(test_y, prediction, multi_class='ovr')
+        test_record.append(auc)
 
-    #     auc = metrics.auc(fpr, tpr)
-    #     t_auc = metrics.auc(t_fpr, t_tpr)
-    #     test_record.append(auc)
-    #     trianing_record.append(t_auc)
+        if auc > max_auc:
+            max_auc = auc
+            min_samples_leaf_value = leaf_value
+            best_model = model
 
-    #     if auc > max_auc:
-    #         max_auc = auc
-    #         min_samples_leaf_value = leaf_value
-    #         best_model = model
-    #     if t_auc > train_max_auc:
-    #         train_max_auc = t_auc
-    #         train_min_samples_leaf_value = leaf_value
-
-    # print("The optimal number of min_samples_leaf by TEST set is:", min_samples_leaf_value)
-    # print("With max AUC by TEST is:", max_auc)
-    # print("The optimal number of min_samples_leaf by TRAINING set is:", train_min_samples_leaf_value)
-    # print("With max AUC by TRAINING is:", train_max_auc)
-    # print("The accuracy of BEST model in Training set is:", best_model.score(train_x, train_y))
-    # print("The accuracy of BEST model in Test set is:", best_model.score(test_x, test_y))
+    print("The optimal number of min_samples_leaf by TEST set is:", min_samples_leaf_value)
+    print("With max AUC by TEST is:", max_auc)
+    print("The accuracy of BEST model in Training set is:", best_model.score(train_x, train_y))
+    print("The accuracy of BEST model in Test set is:", best_model.score(test_x, test_y))
 
 
-    # plt.style.use('ggplot')
-    # fig = plt.figure(figsize=(12, 6))
-    # ax1 = fig.add_subplot(121)
-    # ax1.plot(leaf_value_range, test_record)
-    # ax1.set_title('AUC in TEST set')
-    # ax1.set_xlabel('iterations')
-    # ax1.set_ylabel('AUC')
-
-    # ax2 = fig.add_subplot(122)
-    # ax2.plot(leaf_value_range, trianing_record)
-    # ax2.set_title('AUC in TRAINING set')
-    # ax2.set_xlabel('iterations')
-    # ax2.set_ylabel('AUC')
+    plt.style.use('ggplot')
+    fig = plt.figure(figsize=(12, 6))
+    ax1 = fig.add_subplot(11
+    1)
+    ax1.plot(leaf_value_range, test_record)
+    ax1.set_title('AUC in TEST set')
+    ax1.set_xlabel('iterations')
+    ax1.set_ylabel('AUC')
     
-    # plt.show()
+    plt.show()
     # plt.savefig('figure/Assignment2_Q2_part_C.png')
     
 
