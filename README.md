@@ -39,14 +39,14 @@ git clone https://github.com/HenryLiangzy/COMP9417_Project.git
 * @raymondluk1995: TF-IDF Vector, Bayes Classification
 * @BradWWHU: Keras
 * @zyq0711: SVM
-* @HenryLiangzy: Skating Water (Decision Tree/Random forest)
-* @syzxy: 
+* @HenryLiangzy: Skating Water (Decision Tree)
+* @syzxy: Gradient Descent
   
 ### Machine learing algorithm for this project
 1. Multinomial Naive Bayes
 2. SVM
 3. Decisioin Tree 
-4. Random forest
+4. Gradient Descent
 5. TF-IDF Vector
 6. Keras
 
