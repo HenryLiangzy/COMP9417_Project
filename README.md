@@ -21,7 +21,7 @@ For reference paper link [click here](https://docs.google.com/spreadsheets/d/1ls
 ---
 
 ## Install
-Project using Git to manage. Go and check if you install already
+Project using Git to manage. Go and check if you install or not.
 ### Check git install
 ```Bash
 git --version
