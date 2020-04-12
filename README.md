@@ -9,13 +9,12 @@ For reference paper link [click here](https://docs.google.com/spreadsheets/d/1ls
 > - [ ] Project implement
 > > - [x] Project Descussion 
 > > - [x] Reference Reading
-> > - [ ] Algorithm Implement
-> > > - [ ] Multinomial Naive Bayes
-> > > - [ ] SVM
-> > > - [ ] Decision Tree
-> > > - [ ] Random Forest
-> > > - [ ] TF-IDF Vector
-> > > - [ ] Keras
+> > - [x] Algorithm Implement
+> > > - [x] Multinomial Naive Bayes
+> > > - [x] SVM
+> > > - [x] Decision Tree
+> > > - [x] TF-IDF Vector
+> > > - [x] Keras
 > - [ ] Report
 > - [ ] Submit Project
 
