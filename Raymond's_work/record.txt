@@ -1,0 +1,301 @@
+UNSOLVED CLASS: Biographies, Science
+
+Practical Models:
+
+WITH IRRELEVANT KEYWORDS (CountVectorizer):
+    df_train_full & df_test_50:
+	SHARE LISTING 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	FOREX MARKETS 0.854
+
+		
+
+WITH IRRELEVANT KEWYWORDS (TfidfVectorizer):
+    df_train_full & df_test_100:
+	SHARE 1
+	DOMESTIC 1
+	SPORTS 0.95
+	HEALTH 0.857
+	MONEY: 0.855
+	DEFENCE:0.846
+	
+		
+NOTE: only classes over 80% accuracy would be recorded
+
+
+WITHOUT IRRELEVANT KEYWORDS:
+
+***********************************************************************************
+------------------------------------------------------------------------------	
+
+TfidfVectorizer in SMOTE:
+	
+
+df_train_20 & df_test_20:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	IRRELEVANT 0
+
+df_train_50 & df_test_20:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	IRRELEVANT 0
+
+df_train_50 & df_test_50:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE ENTERTAINMENT 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	IRRELEVANT 0
+
+df_train_100 & df_test_20:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	IRRELEVANT 0
+
+df_train_100 & df_test_50:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE ENTERTAINMENT 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	IRRELEVANT 0
+
+df_train_100 & df_test_100:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+	HEALTH 0.857
+
+df_train_full & df_test_20:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.933
+	DEFENCE 0.923
+	MONEY MARKETS 0.884
+
+df_train_full & df_test_100:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.95
+	HEALTH 0.857
+	MONEY MARKETS 0.855
+	DEFENCE 0.846
+
+------------------------------------------------------------------------------	
+
+CountVectorizer in SMOTE:
+
+df_train_10 & df_test_20:
+	SHARE_LISTINGS 1
+	SPORTS 0.917
+	
+df_train_20 & df_test_20:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+
+df_train_50 & df_test_20:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	
+df_train_100 & df_test_20:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+
+df_train_100 & df_test_50:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+
+df_train_100 & df_test_100:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+
+df_train_full & df_test_20:
+	SHARE 1
+	DOMESTIC 1
+	DEFENCE 0.923
+	SPORTS 0.9
+	FOREX MARKETS 0.875
+
+df_train_full & df_test_50:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	FOREX MARKETS 0.854
+
+
+
+
+
+WITH IRRELEVANT KEYWORDS:
+***********************************************************************************
+TfidfVectorizer in SMOTE:
+
+df_train_50 & df_test_50 & df_test_100 & df_test_full:
+	SHARE 1
+	DOMESTIC 1
+	ARTS 1
+	SPORTS 0.967
+	DEFENCE 0.923
+
+df_train_full & df_test_20:
+	SHARE 1
+	DOMESTIC 1
+	SPORTS 0.933
+	DEFENCE 0.923
+	MONEY 0.884
+
+df_train_full & df_test_100:
+	SHARE 1
+	DOMESTIC 1
+	SPORTS 0.95
+	HEALTH 0.857
+	MONEY: 0.855
+	DEFENCE:0.846	
+	
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------	
+CountVectorizer in SMOTE:
+
+df_train_10 & df_test_20:
+	SHARE_LISTINGS 1
+	SPORTS 0.9333
+	DEFENCE 0.846
+
+df_train_10 & df_test_50:
+	SHARE_LISTINGS 1
+	SPORTS 0.9333
+	DEFENCE 0.846
+
+df_train_10 & df_test_100:
+	SHARE_LISTINGS 1
+	SPORTS 0.9333
+	DEFENCE 0.846
+
+df_train_10 & df_test_full:
+	SHARE_LISTINGS 1
+	SPORTS 0.9333
+	DEFENCE 0.846
+
+df_train_20 & df_test_20:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.846
+
+df_train_20 & df_test_50:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.846
+
+df_train_20 & df_test_100:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.846	
+
+df_train_20 & df_test_full:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.967
+	DEFENCE 0.846
+
+df_train_50 & df_test_20:
+	SHARE_LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+
+df_train_50 & df_test_50:
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	SHARE LISTING 0.857
+	DEFENCE 0.846
+
+df_train_50 & df_test_100:
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	SHARE LISTING 0.857
+	DEFENCE 0.846
+
+df_train_50 & df_test_full:
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	SHARE LISTING 0.857
+	DEFENCE 0.846
+
+df_train_100 & df_test_20:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+
+df_train_100 & df_test_50:
+	SHARE_LISTINGS 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.967
+	DEFENCE 0.846
+
+df_train_full & df_test_20:
+	SHARE LISTING 1
+	DOMESTIC MARKETS 1
+	DEFENCE 0.923
+	SPORTS 0.9
+	FOREX MARKETS 0.875
+	
+df_train_full & df_test_50:
+	SHARE LISTING 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	FOREX MARKETS 0.854
+
+df_train_full & df_test_100:
+	SHARE LISTING 1
+	DOMESTIC MARKETS 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	FOREX MARKETS 0.854
+
