@@ -1,0 +1,811 @@
+*************************************************************
+Now the training set is df_train_10, and the model chosen is wc
+The accuracy is 0.6144319294369145
+----------------------------------------------------------------------
+Now, the train_df is df_train_10, the test_df is df_test_20
+F1 score for  SVC  model is  0.40393690304232455
+Accuracy score for  SVC  model is  0.582
+Recall score for  SVC  model is  0.5250436634303911 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.06      0.33      0.10         3
+           1       0.19      0.33      0.24        15
+           2       0.41      0.69      0.51        13
+           3       0.08      0.50      0.14         2
+           4       0.51      0.79      0.62        48
+           5       0.64      0.64      0.64        14
+           6       0.85      0.51      0.64       266
+           7       0.47      0.45      0.46        69
+           8       0.00      0.00      0.00         3
+           9       0.10      0.57      0.17         7
+          10       0.89      0.95      0.92        60
+
+    accuracy                           0.58       500
+   macro avg       0.38      0.53      0.40       500
+weighted avg       0.71      0.58      0.61       500
+
+The scores for each topic is:
+['SPORTS', {'accuracy': 0.95, 'f1': 0.3247863247863248, 'recall': 0.31666666666666665}]
+['FOREX MARKETS', {'accuracy': 0.7916666666666666, 'f1': 0.29457364341085274, 'recall': 0.2638888888888889}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.16363636363636364, 'recall': 0.13846153846153847}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1565217391304348, 'recall': 0.1285714285714286}]
+['SHARE LISTINGS', {'accuracy': 0.5714285714285714, 'f1': 0.36363636363636365, 'recall': 0.2857142857142857}]
+['IRRELEVANT', {'accuracy': 0.5112781954887218, 'f1': 0.06766169154228856, 'recall': 0.051127819548872175}]
+['DOMESTIC MARKETS', {'accuracy': 0.5, 'f1': 0.3333333333333333, 'recall': 0.25}]
+['MONEY MARKETS', {'accuracy': 0.4492753623188406, 'f1': 0.20666666666666667, 'recall': 0.1497584541062802}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.3333333333333333, 'f1': 0.08333333333333333, 'recall': 0.05555555555555555}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   0   0   0   0   0   1   0   0   0   1]
+ [  4   5   1   0   0   0   2   0   0   1   2]
+ [  1   1   9   0   0   0   1   0   1   0   0]
+ [  0   0   0   1   0   0   1   0   0   0   0]
+ [  0   1   0   0  38   0   0   9   0   0   0]
+ [  0   1   0   1   0   9   1   0   2   0   0]
+ [ 11  17  12  10  11   4 136  26   0  35   4]
+ [  0   0   0   0  26   0  12  31   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   3   0   0   4   0]
+ [  0   1   0   0   0   0   2   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_10, the test_df is df_test_50
+F1 score for  SVC  model is  0.40393690304232455
+Accuracy score for  SVC  model is  0.582
+Recall score for  SVC  model is  0.5250436634303911 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.06      0.33      0.10         3
+           1       0.19      0.33      0.24        15
+           2       0.41      0.69      0.51        13
+           3       0.08      0.50      0.14         2
+           4       0.51      0.79      0.62        48
+           5       0.64      0.64      0.64        14
+           6       0.85      0.51      0.64       266
+           7       0.47      0.45      0.46        69
+           8       0.00      0.00      0.00         3
+           9       0.10      0.57      0.17         7
+          10       0.89      0.95      0.92        60
+
+    accuracy                           0.58       500
+   macro avg       0.38      0.53      0.40       500
+weighted avg       0.71      0.58      0.61       500
+
+The scores for each topic is:
+['SPORTS', {'accuracy': 0.95, 'f1': 0.3247863247863248, 'recall': 0.31666666666666665}]
+['FOREX MARKETS', {'accuracy': 0.7916666666666666, 'f1': 0.29457364341085274, 'recall': 0.2638888888888889}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.16363636363636364, 'recall': 0.13846153846153847}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1565217391304348, 'recall': 0.1285714285714286}]
+['SHARE LISTINGS', {'accuracy': 0.5714285714285714, 'f1': 0.36363636363636365, 'recall': 0.2857142857142857}]
+['IRRELEVANT', {'accuracy': 0.5112781954887218, 'f1': 0.06766169154228856, 'recall': 0.051127819548872175}]
+['DOMESTIC MARKETS', {'accuracy': 0.5, 'f1': 0.3333333333333333, 'recall': 0.25}]
+['MONEY MARKETS', {'accuracy': 0.4492753623188406, 'f1': 0.20666666666666667, 'recall': 0.1497584541062802}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.3333333333333333, 'f1': 0.08333333333333333, 'recall': 0.05555555555555555}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   0   0   0   0   0   1   0   0   0   1]
+ [  4   5   1   0   0   0   2   0   0   1   2]
+ [  1   1   9   0   0   0   1   0   1   0   0]
+ [  0   0   0   1   0   0   1   0   0   0   0]
+ [  0   1   0   0  38   0   0   9   0   0   0]
+ [  0   1   0   1   0   9   1   0   2   0   0]
+ [ 11  17  12  10  11   4 136  26   0  35   4]
+ [  0   0   0   0  26   0  12  31   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   3   0   0   4   0]
+ [  0   1   0   0   0   0   2   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_10, the test_df is df_test_100
+F1 score for  SVC  model is  0.40393690304232455
+Accuracy score for  SVC  model is  0.582
+Recall score for  SVC  model is  0.5250436634303911 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.06      0.33      0.10         3
+           1       0.19      0.33      0.24        15
+           2       0.41      0.69      0.51        13
+           3       0.08      0.50      0.14         2
+           4       0.51      0.79      0.62        48
+           5       0.64      0.64      0.64        14
+           6       0.85      0.51      0.64       266
+           7       0.47      0.45      0.46        69
+           8       0.00      0.00      0.00         3
+           9       0.10      0.57      0.17         7
+          10       0.89      0.95      0.92        60
+
+    accuracy                           0.58       500
+   macro avg       0.38      0.53      0.40       500
+weighted avg       0.71      0.58      0.61       500
+
+The scores for each topic is:
+['SPORTS', {'accuracy': 0.95, 'f1': 0.3247863247863248, 'recall': 0.31666666666666665}]
+['FOREX MARKETS', {'accuracy': 0.7916666666666666, 'f1': 0.29457364341085274, 'recall': 0.2638888888888889}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.16363636363636364, 'recall': 0.13846153846153847}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1565217391304348, 'recall': 0.1285714285714286}]
+['SHARE LISTINGS', {'accuracy': 0.5714285714285714, 'f1': 0.36363636363636365, 'recall': 0.2857142857142857}]
+['IRRELEVANT', {'accuracy': 0.5112781954887218, 'f1': 0.06766169154228856, 'recall': 0.051127819548872175}]
+['DOMESTIC MARKETS', {'accuracy': 0.5, 'f1': 0.3333333333333333, 'recall': 0.25}]
+['MONEY MARKETS', {'accuracy': 0.4492753623188406, 'f1': 0.20666666666666667, 'recall': 0.1497584541062802}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.3333333333333333, 'f1': 0.08333333333333333, 'recall': 0.05555555555555555}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   0   0   0   0   0   1   0   0   0   1]
+ [  4   5   1   0   0   0   2   0   0   1   2]
+ [  1   1   9   0   0   0   1   0   1   0   0]
+ [  0   0   0   1   0   0   1   0   0   0   0]
+ [  0   1   0   0  38   0   0   9   0   0   0]
+ [  0   1   0   1   0   9   1   0   2   0   0]
+ [ 11  17  12  10  11   4 136  26   0  35   4]
+ [  0   0   0   0  26   0  12  31   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   3   0   0   4   0]
+ [  0   1   0   0   0   0   2   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_10, the test_df is df_test_full
+F1 score for  SVC  model is  0.40393690304232455
+Accuracy score for  SVC  model is  0.582
+Recall score for  SVC  model is  0.5250436634303911 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.06      0.33      0.10         3
+           1       0.19      0.33      0.24        15
+           2       0.41      0.69      0.51        13
+           3       0.08      0.50      0.14         2
+           4       0.51      0.79      0.62        48
+           5       0.64      0.64      0.64        14
+           6       0.85      0.51      0.64       266
+           7       0.47      0.45      0.46        69
+           8       0.00      0.00      0.00         3
+           9       0.10      0.57      0.17         7
+          10       0.89      0.95      0.92        60
+
+    accuracy                           0.58       500
+   macro avg       0.38      0.53      0.40       500
+weighted avg       0.71      0.58      0.61       500
+
+The scores for each topic is:
+['SPORTS', {'accuracy': 0.95, 'f1': 0.3247863247863248, 'recall': 0.31666666666666665}]
+['FOREX MARKETS', {'accuracy': 0.7916666666666666, 'f1': 0.29457364341085274, 'recall': 0.2638888888888889}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.16363636363636364, 'recall': 0.13846153846153847}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1565217391304348, 'recall': 0.1285714285714286}]
+['SHARE LISTINGS', {'accuracy': 0.5714285714285714, 'f1': 0.36363636363636365, 'recall': 0.2857142857142857}]
+['IRRELEVANT', {'accuracy': 0.5112781954887218, 'f1': 0.06766169154228856, 'recall': 0.051127819548872175}]
+['DOMESTIC MARKETS', {'accuracy': 0.5, 'f1': 0.3333333333333333, 'recall': 0.25}]
+['MONEY MARKETS', {'accuracy': 0.4492753623188406, 'f1': 0.20666666666666667, 'recall': 0.1497584541062802}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.3333333333333333, 'f1': 0.08333333333333333, 'recall': 0.05555555555555555}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   0   0   0   0   0   1   0   0   0   1]
+ [  4   5   1   0   0   0   2   0   0   1   2]
+ [  1   1   9   0   0   0   1   0   1   0   0]
+ [  0   0   0   1   0   0   1   0   0   0   0]
+ [  0   1   0   0  38   0   0   9   0   0   0]
+ [  0   1   0   1   0   9   1   0   2   0   0]
+ [ 11  17  12  10  11   4 136  26   0  35   4]
+ [  0   0   0   0  26   0  12  31   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   3   0   0   4   0]
+ [  0   1   0   0   0   0   2   0   0   0  57]]
+
+*************************************************************
+Now the training set is df_train_20, and the model chosen is wc
+The accuracy is 0.6628362237510259
+----------------------------------------------------------------------
+Now, the train_df is df_train_20, the test_df is df_test_20
+F1 score for  SVC  model is  0.44880059752708984
+Accuracy score for  SVC  model is  0.654
+Recall score for  SVC  model is  0.5783696471339492 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         3
+           1       0.29      0.40      0.33        15
+           2       0.50      0.77      0.61        13
+           3       0.22      1.00      0.36         2
+           4       0.51      0.83      0.63        48
+           5       0.57      0.57      0.57        14
+           6       0.92      0.62      0.74       266
+           7       0.53      0.51      0.52        69
+           8       0.00      0.00      0.00         3
+           9       0.15      0.71      0.25         7
+          10       0.90      0.95      0.93        60
+
+    accuracy                           0.65       500
+   macro avg       0.42      0.58      0.45       500
+weighted avg       0.76      0.65      0.68       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.48717948717948717, 'recall': 0.475}]
+['FOREX MARKETS', {'accuracy': 0.8333333333333334, 'f1': 0.30303030303030304, 'recall': 0.2777777777777778}]
+['DEFENCE', {'accuracy': 0.7692307692307693, 'f1': 0.2173913043478261, 'recall': 0.19230769230769232}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['IRRELEVANT', {'accuracy': 0.6165413533834586, 'f1': 0.07627906976744185, 'recall': 0.061654135338345864}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.24242424242424243, 'recall': 0.19047619047619047}]
+['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.22435897435897437, 'recall': 0.16908212560386474}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4, 'f1': 0.09523809523809525, 'recall': 0.06666666666666667}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  0   1   0   0   0   0   1   0   0   0   1]
+ [  5   6   1   0   0   0   1   0   0   1   1]
+ [  0   1  10   0   0   0   1   0   1   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  40   0   2   6   0   0   0]
+ [  0   0   0   0   0   8   3   0   3   0   0]
+ [  4  12   9   7   9   5 164  25   0  27   4]
+ [  0   0   0   0  30   0   4  35   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  3   0   0   0   0   0   0   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_20, the test_df is df_test_50
+F1 score for  SVC  model is  0.44880059752708984
+Accuracy score for  SVC  model is  0.654
+Recall score for  SVC  model is  0.5783696471339492 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         3
+           1       0.29      0.40      0.33        15
+           2       0.50      0.77      0.61        13
+           3       0.22      1.00      0.36         2
+           4       0.51      0.83      0.63        48
+           5       0.57      0.57      0.57        14
+           6       0.92      0.62      0.74       266
+           7       0.53      0.51      0.52        69
+           8       0.00      0.00      0.00         3
+           9       0.15      0.71      0.25         7
+          10       0.90      0.95      0.93        60
+
+    accuracy                           0.65       500
+   macro avg       0.42      0.58      0.45       500
+weighted avg       0.76      0.65      0.68       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.48717948717948717, 'recall': 0.475}]
+['FOREX MARKETS', {'accuracy': 0.8333333333333334, 'f1': 0.30303030303030304, 'recall': 0.2777777777777778}]
+['DEFENCE', {'accuracy': 0.7692307692307693, 'f1': 0.2173913043478261, 'recall': 0.19230769230769232}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['IRRELEVANT', {'accuracy': 0.6165413533834586, 'f1': 0.07627906976744185, 'recall': 0.061654135338345864}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.24242424242424243, 'recall': 0.19047619047619047}]
+['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.22435897435897437, 'recall': 0.16908212560386474}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4, 'f1': 0.09523809523809525, 'recall': 0.06666666666666667}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  0   1   0   0   0   0   1   0   0   0   1]
+ [  5   6   1   0   0   0   1   0   0   1   1]
+ [  0   1  10   0   0   0   1   0   1   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  40   0   2   6   0   0   0]
+ [  0   0   0   0   0   8   3   0   3   0   0]
+ [  4  12   9   7   9   5 164  25   0  27   4]
+ [  0   0   0   0  30   0   4  35   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  3   0   0   0   0   0   0   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_20, the test_df is df_test_100
+F1 score for  SVC  model is  0.44880059752708984
+Accuracy score for  SVC  model is  0.654
+Recall score for  SVC  model is  0.5783696471339492 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         3
+           1       0.29      0.40      0.33        15
+           2       0.50      0.77      0.61        13
+           3       0.22      1.00      0.36         2
+           4       0.51      0.83      0.63        48
+           5       0.57      0.57      0.57        14
+           6       0.92      0.62      0.74       266
+           7       0.53      0.51      0.52        69
+           8       0.00      0.00      0.00         3
+           9       0.15      0.71      0.25         7
+          10       0.90      0.95      0.93        60
+
+    accuracy                           0.65       500
+   macro avg       0.42      0.58      0.45       500
+weighted avg       0.76      0.65      0.68       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.48717948717948717, 'recall': 0.475}]
+['FOREX MARKETS', {'accuracy': 0.8333333333333334, 'f1': 0.30303030303030304, 'recall': 0.2777777777777778}]
+['DEFENCE', {'accuracy': 0.7692307692307693, 'f1': 0.2173913043478261, 'recall': 0.19230769230769232}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['IRRELEVANT', {'accuracy': 0.6165413533834586, 'f1': 0.07627906976744185, 'recall': 0.061654135338345864}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.24242424242424243, 'recall': 0.19047619047619047}]
+['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.22435897435897437, 'recall': 0.16908212560386474}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4, 'f1': 0.09523809523809525, 'recall': 0.06666666666666667}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  0   1   0   0   0   0   1   0   0   0   1]
+ [  5   6   1   0   0   0   1   0   0   1   1]
+ [  0   1  10   0   0   0   1   0   1   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  40   0   2   6   0   0   0]
+ [  0   0   0   0   0   8   3   0   3   0   0]
+ [  4  12   9   7   9   5 164  25   0  27   4]
+ [  0   0   0   0  30   0   4  35   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  3   0   0   0   0   0   0   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_20, the test_df is df_test_full
+F1 score for  SVC  model is  0.44880059752708984
+Accuracy score for  SVC  model is  0.654
+Recall score for  SVC  model is  0.5783696471339492 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         3
+           1       0.29      0.40      0.33        15
+           2       0.50      0.77      0.61        13
+           3       0.22      1.00      0.36         2
+           4       0.51      0.83      0.63        48
+           5       0.57      0.57      0.57        14
+           6       0.92      0.62      0.74       266
+           7       0.53      0.51      0.52        69
+           8       0.00      0.00      0.00         3
+           9       0.15      0.71      0.25         7
+          10       0.90      0.95      0.93        60
+
+    accuracy                           0.65       500
+   macro avg       0.42      0.58      0.45       500
+weighted avg       0.76      0.65      0.68       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.48717948717948717, 'recall': 0.475}]
+['FOREX MARKETS', {'accuracy': 0.8333333333333334, 'f1': 0.30303030303030304, 'recall': 0.2777777777777778}]
+['DEFENCE', {'accuracy': 0.7692307692307693, 'f1': 0.2173913043478261, 'recall': 0.19230769230769232}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['IRRELEVANT', {'accuracy': 0.6165413533834586, 'f1': 0.07627906976744185, 'recall': 0.061654135338345864}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.24242424242424243, 'recall': 0.19047619047619047}]
+['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.22435897435897437, 'recall': 0.16908212560386474}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4, 'f1': 0.09523809523809525, 'recall': 0.06666666666666667}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  0   1   0   0   0   0   1   0   0   0   1]
+ [  5   6   1   0   0   0   1   0   0   1   1]
+ [  0   1  10   0   0   0   1   0   1   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  40   0   2   6   0   0   0]
+ [  0   0   0   0   0   8   3   0   3   0   0]
+ [  4  12   9   7   9   5 164  25   0  27   4]
+ [  0   0   0   0  30   0   4  35   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  3   0   0   0   0   0   0   0   0   0  57]]
+
+*************************************************************
+Now the training set is df_train_50, and the model chosen is wc
+The accuracy is 0.7216842105263158
+----------------------------------------------------------------------
+Now, the train_df is df_train_50, the test_df is df_test_20
+F1 score for  SVC  model is  0.4809633745127458
+Accuracy score for  SVC  model is  0.71
+Recall score for  SVC  model is  0.5956860549823937 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.07      0.33      0.12         3
+           1       0.33      0.27      0.30        15
+           2       0.69      0.69      0.69        13
+           3       0.22      1.00      0.36         2
+           4       0.52      0.90      0.66        48
+           5       0.50      0.57      0.53        14
+           6       0.87      0.75      0.81       266
+           7       0.58      0.38      0.46        69
+           8       0.00      0.00      0.00         3
+           9       0.29      0.71      0.42         7
+          10       0.95      0.95      0.95        60
+
+    accuracy                           0.71       500
+   macro avg       0.46      0.60      0.48       500
+weighted avg       0.76      0.71      0.72       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.3247863247863248, 'recall': 0.31666666666666665}]
+['FOREX MARKETS', {'accuracy': 0.8958333333333334, 'f1': 0.315018315018315, 'recall': 0.2986111111111111}]
+['IRRELEVANT', {'accuracy': 0.7518796992481203, 'f1': 0.08583690987124463, 'recall': 0.07518796992481203}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.20454545454545453, 'recall': 0.17307692307692307}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.18181818181818182, 'recall': 0.14285714285714285}]
+['MONEY MARKETS', {'accuracy': 0.37681159420289856, 'f1': 0.1824561403508772, 'recall': 0.12560386473429952}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.26666666666666666, 'f1': 0.08421052631578949, 'recall': 0.05333333333333333}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   1   0   0   0   0   1   0   0   0   0]
+ [  4   4   0   0   0   2   4   0   0   1   0]
+ [  1   1   9   0   0   0   2   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  43   0   2   3   0   0   0]
+ [  1   0   0   0   0   8   3   0   2   0   0]
+ [  5   5   4   7  10   5 200  16   0  11   3]
+ [  0   0   0   0  30   0  13  26   0   0   0]
+ [  0   1   0   0   0   1   1   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  2   0   0   0   0   0   1   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_50, the test_df is df_test_50
+F1 score for  SVC  model is  0.5857787035471279
+Accuracy score for  SVC  model is  0.75
+Recall score for  SVC  model is  0.7387888141606677 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.25      0.67      0.36         3
+           1       0.56      0.60      0.58        15
+           2       0.67      0.92      0.77        13
+           3       0.22      1.00      0.36         2
+           4       0.54      0.85      0.66        48
+           5       0.53      0.64      0.58        14
+           6       0.93      0.74      0.83       266
+           7       0.60      0.52      0.56        69
+           8       0.25      0.33      0.29         3
+           9       0.33      0.86      0.48         7
+          10       0.95      0.98      0.97        60
+
+    accuracy                           0.75       500
+   macro avg       0.53      0.74      0.59       500
+weighted avg       0.80      0.75      0.76       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+['IRRELEVANT', {'accuracy': 0.7443609022556391, 'f1': 0.07758620689655173, 'recall': 0.06766917293233082}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1956521739130435, 'recall': 0.16071428571428573}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.6, 'f1': 0.18749999999999997, 'recall': 0.15}]
+['MONEY MARKETS', {'accuracy': 0.5217391304347826, 'f1': 0.22857142857142854, 'recall': 0.17391304347826086}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   1   0   0   0   0   0   0   0   0   0]
+ [  2   9   0   0   0   2   2   0   0   0   0]
+ [  1   0  12   0   0   0   0   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  41   0   3   4   0   0   0]
+ [  0   0   0   1   0   9   2   0   2   0   0]
+ [  2   5   6   6   8   5 198  20   1  12   3]
+ [  0   0   0   0  27   0   6  36   0   0   0]
+ [  1   0   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   1   0   0   0   0   0   0   0   0  59]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_50, the test_df is df_test_100
+F1 score for  SVC  model is  0.5857787035471279
+Accuracy score for  SVC  model is  0.75
+Recall score for  SVC  model is  0.7387888141606677 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.25      0.67      0.36         3
+           1       0.56      0.60      0.58        15
+           2       0.67      0.92      0.77        13
+           3       0.22      1.00      0.36         2
+           4       0.54      0.85      0.66        48
+           5       0.53      0.64      0.58        14
+           6       0.93      0.74      0.83       266
+           7       0.60      0.52      0.56        69
+           8       0.25      0.33      0.29         3
+           9       0.33      0.86      0.48         7
+          10       0.95      0.98      0.97        60
+
+    accuracy                           0.75       500
+   macro avg       0.53      0.74      0.59       500
+weighted avg       0.80      0.75      0.76       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+['IRRELEVANT', {'accuracy': 0.7443609022556391, 'f1': 0.07758620689655173, 'recall': 0.06766917293233082}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1956521739130435, 'recall': 0.16071428571428573}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.6, 'f1': 0.18749999999999997, 'recall': 0.15}]
+['MONEY MARKETS', {'accuracy': 0.5217391304347826, 'f1': 0.22857142857142854, 'recall': 0.17391304347826086}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   1   0   0   0   0   0   0   0   0   0]
+ [  2   9   0   0   0   2   2   0   0   0   0]
+ [  1   0  12   0   0   0   0   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  41   0   3   4   0   0   0]
+ [  0   0   0   1   0   9   2   0   2   0   0]
+ [  2   5   6   6   8   5 198  20   1  12   3]
+ [  0   0   0   0  27   0   6  36   0   0   0]
+ [  1   0   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   1   0   0   0   0   0   0   0   0  59]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_50, the test_df is df_test_full
+F1 score for  SVC  model is  0.5857787035471279
+Accuracy score for  SVC  model is  0.75
+Recall score for  SVC  model is  0.7387888141606677 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.25      0.67      0.36         3
+           1       0.56      0.60      0.58        15
+           2       0.67      0.92      0.77        13
+           3       0.22      1.00      0.36         2
+           4       0.54      0.85      0.66        48
+           5       0.53      0.64      0.58        14
+           6       0.93      0.74      0.83       266
+           7       0.60      0.52      0.56        69
+           8       0.25      0.33      0.29         3
+           9       0.33      0.86      0.48         7
+          10       0.95      0.98      0.97        60
+
+    accuracy                           0.75       500
+   macro avg       0.53      0.74      0.59       500
+weighted avg       0.80      0.75      0.76       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+['IRRELEVANT', {'accuracy': 0.7443609022556391, 'f1': 0.07758620689655173, 'recall': 0.06766917293233082}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1956521739130435, 'recall': 0.16071428571428573}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.6, 'f1': 0.18749999999999997, 'recall': 0.15}]
+['MONEY MARKETS', {'accuracy': 0.5217391304347826, 'f1': 0.22857142857142854, 'recall': 0.17391304347826086}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   1   0   0   0   0   0   0   0   0   0]
+ [  2   9   0   0   0   2   2   0   0   0   0]
+ [  1   0  12   0   0   0   0   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  41   0   3   4   0   0   0]
+ [  0   0   0   1   0   9   2   0   2   0   0]
+ [  2   5   6   6   8   5 198  20   1  12   3]
+ [  0   0   0   0  27   0   6  36   0   0   0]
+ [  1   0   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   1   0   0   0   0   0   0   0   0  59]]
+
+*************************************************************
+Now the training set is df_train_100, and the model chosen is wc
+The accuracy is 0.7466315789473684
+----------------------------------------------------------------------
+Now, the train_df is df_train_100, the test_df is df_test_20
+F1 score for  SVC  model is  0.47218538503133983
+Accuracy score for  SVC  model is  0.698
+Recall score for  SVC  model is  0.578694093854277 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.20      0.33      0.25         3
+           1       0.40      0.13      0.20        15
+           2       0.75      0.69      0.72        13
+           3       0.22      1.00      0.36         2
+           4       0.48      0.88      0.62        48
+           5       0.47      0.57      0.52        14
+           6       0.85      0.75      0.80       266
+           7       0.50      0.35      0.41        69
+           8       0.00      0.00      0.00         3
+           9       0.25      0.71      0.37         7
+          10       0.95      0.95      0.95        60
+
+    accuracy                           0.70       500
+   macro avg       0.46      0.58      0.47       500
+weighted avg       0.73      0.70      0.70       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.95, 'f1': 0.48717948717948717, 'recall': 0.475}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.3111111111111111, 'recall': 0.2916666666666667}]
+['IRRELEVANT', {'accuracy': 0.7481203007518797, 'f1': 0.08559139784946238, 'recall': 0.07481203007518797}]
+['SHARE LISTINGS', {'accuracy': 0.7142857142857143, 'f1': 0.41666666666666663, 'recall': 0.35714285714285715}]
+['DEFENCE', {'accuracy': 0.6923076923076923, 'f1': 0.2727272727272727, 'recall': 0.23076923076923075}]
+['HEALTH', {'accuracy': 0.5714285714285714, 'f1': 0.18181818181818182, 'recall': 0.14285714285714285}]
+['MONEY MARKETS', {'accuracy': 0.34782608695652173, 'f1': 0.12903225806451613, 'recall': 0.08695652173913043}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.13333333333333333, 'f1': 0.047058823529411764, 'recall': 0.026666666666666665}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.0, 'f1': 0.0, 'recall': 0.0}]
+[[  1   0   0   0   0   1   1   0   0   0   0]
+ [  2   2   0   0   0   3   7   0   0   1   0]
+ [  0   1   9   0   0   0   3   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  42   0   2   4   0   0   0]
+ [  1   0   0   0   0   8   3   0   2   0   0]
+ [  1   2   3   6  14   4 199  20   0  14   3]
+ [  0   0   0   1  32   0  12  24   0   0   0]
+ [  0   0   0   0   0   1   2   0   0   0   0]
+ [  0   0   0   0   0   0   2   0   0   5   0]
+ [  0   0   0   0   0   0   3   0   0   0  57]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_100, the test_df is df_test_50
+F1 score for  SVC  model is  0.5830511519663609
+Accuracy score for  SVC  model is  0.738
+Recall score for  SVC  model is  0.7296442878250656 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.33      0.67      0.44         3
+           1       0.47      0.53      0.50        15
+           2       0.80      0.92      0.86        13
+           3       0.22      1.00      0.36         2
+           4       0.54      0.88      0.67        48
+           5       0.56      0.64      0.60        14
+           6       0.93      0.73      0.82       266
+           7       0.54      0.48      0.51        69
+           8       0.25      0.33      0.29         3
+           9       0.26      0.86      0.40         7
+          10       0.95      0.98      0.97        60
+
+    accuracy                           0.74       500
+   macro avg       0.53      0.73      0.58       500
+weighted avg       0.80      0.74      0.75       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.3111111111111111, 'recall': 0.2916666666666667}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['IRRELEVANT', {'accuracy': 0.7330827067669173, 'f1': 0.07690790771051075, 'recall': 0.06664388243335612}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['HEALTH', {'accuracy': 0.6428571428571429, 'f1': 0.1565217391304348, 'recall': 0.1285714285714286}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.5333333333333333, 'f1': 0.13913043478260873, 'recall': 0.10666666666666666}]
+['MONEY MARKETS', {'accuracy': 0.4782608695652174, 'f1': 0.16176470588235295, 'recall': 0.11956521739130435}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   1   0   0   0   0   0   0   0   0   0]
+ [  2   8   0   0   0   2   2   0   0   1   0]
+ [  0   0  12   0   0   0   1   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  42   0   2   4   0   0   0]
+ [  1   0   0   1   0   9   1   0   2   0   0]
+ [  1   6   3   5   8   4 195  24   1  16   3]
+ [  0   0   0   1  28   0   7  33   0   0   0]
+ [  0   1   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   1   0   0   0   0   0   0   0   0  59]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_100, the test_df is df_test_100
+F1 score for  SVC  model is  0.625717214978584
+Accuracy score for  SVC  model is  0.78
+Recall score for  SVC  model is  0.7423347342969767 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      0.67      0.57         3
+           1       0.58      0.47      0.52        15
+           2       0.67      0.92      0.77        13
+           3       0.22      1.00      0.36         2
+           4       0.58      0.85      0.69        48
+           5       0.59      0.71      0.65        14
+           6       0.94      0.79      0.86       266
+           7       0.60      0.59      0.60        69
+           8       0.33      0.33      0.33         3
+           9       0.43      0.86      0.57         7
+          10       0.95      0.97      0.96        60
+
+    accuracy                           0.78       500
+   macro avg       0.58      0.74      0.63       500
+weighted avg       0.82      0.78      0.79       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9666666666666667, 'f1': 0.4915254237288135, 'recall': 0.48333333333333334}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+['IRRELEVANT', {'accuracy': 0.7894736842105263, 'f1': 0.09803921568627451, 'recall': 0.08771929824561403}]
+['HEALTH', {'accuracy': 0.7142857142857143, 'f1': 0.20833333333333331, 'recall': 0.17857142857142858}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['MONEY MARKETS', {'accuracy': 0.5942028985507246, 'f1': 0.18636363636363637, 'recall': 0.14855072463768115}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4666666666666667, 'f1': 0.12727272727272726, 'recall': 0.09333333333333334}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   0   0   0   0   0   1   0   0   0   0]
+ [  1   7   0   0   0   2   4   0   0   1   0]
+ [  0   0  12   0   0   0   1   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  41   0   2   5   0   0   0]
+ [  1   0   0   0   0  10   1   0   2   0   0]
+ [  0   2   6   6   6   4 210  22   0   7   3]
+ [  0   0   0   1  24   0   3  41   0   0   0]
+ [  0   1   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   2   0   0   0   0   0   0   0   0  58]]
+
+----------------------------------------------------------------------
+Now, the train_df is df_train_100, the test_df is df_test_full
+F1 score for  SVC  model is  0.625717214978584
+Accuracy score for  SVC  model is  0.78
+Recall score for  SVC  model is  0.7423347342969767 
+
+{'ARTS CULTURE ENTERTAINMENT': 0, 'BIOGRAPHIES PERSONALITIES PEOPLE': 1, 'DEFENCE': 2, 'DOMESTIC MARKETS': 3, 'FOREX MARKETS': 4, 'HEALTH': 5, 'IRRELEVANT': 6, 'MONEY MARKETS': 7, 'SCIENCE AND TECHNOLOGY': 8, 'SHARE LISTINGS': 9, 'SPORTS': 10}
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      0.67      0.57         3
+           1       0.58      0.47      0.52        15
+           2       0.67      0.92      0.77        13
+           3       0.22      1.00      0.36         2
+           4       0.58      0.85      0.69        48
+           5       0.59      0.71      0.65        14
+           6       0.94      0.79      0.86       266
+           7       0.60      0.59      0.60        69
+           8       0.33      0.33      0.33         3
+           9       0.43      0.86      0.57         7
+          10       0.95      0.97      0.96        60
+
+    accuracy                           0.78       500
+   macro avg       0.58      0.74      0.63       500
+weighted avg       0.82      0.78      0.79       500
+
+The scores for each topic is:
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9666666666666667, 'f1': 0.4915254237288135, 'recall': 0.48333333333333334}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+['IRRELEVANT', {'accuracy': 0.7894736842105263, 'f1': 0.09803921568627451, 'recall': 0.08771929824561403}]
+['HEALTH', {'accuracy': 0.7142857142857143, 'f1': 0.20833333333333331, 'recall': 0.17857142857142858}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['MONEY MARKETS', {'accuracy': 0.5942028985507246, 'f1': 0.18636363636363637, 'recall': 0.14855072463768115}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.4666666666666667, 'f1': 0.12727272727272726, 'recall': 0.09333333333333334}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+[[  2   0   0   0   0   0   1   0   0   0   0]
+ [  1   7   0   0   0   2   4   0   0   1   0]
+ [  0   0  12   0   0   0   1   0   0   0   0]
+ [  0   0   0   2   0   0   0   0   0   0   0]
+ [  0   0   0   0  41   0   2   5   0   0   0]
+ [  1   0   0   0   0  10   1   0   2   0   0]
+ [  0   2   6   6   6   4 210  22   0   7   3]
+ [  0   0   0   1  24   0   3  41   0   0   0]
+ [  0   1   0   0   0   1   0   0   1   0   0]
+ [  0   0   0   0   0   0   1   0   0   6   0]
+ [  0   2   0   0   0   0   0   0   0   0  58]]
