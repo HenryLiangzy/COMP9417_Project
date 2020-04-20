@@ -1,3 +1,19 @@
+train_50 and test 50 
+
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+['FOREX MARKETS', {'accuracy': 0.8541666666666666, 'f1': 0.3071161048689139, 'recall': 0.2847222222222222}]
+
+train_100 and  test_50
+
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.3111111111111111, 'recall': 0.2916666666666667}]
+['SHARE LISTINGS', {'accuracy': 0.8571428571428571, 'f1': 0.4615384615384615, 'recall': 0.42857142857142855}]
+
 *************************************************************
 Now the training set is df_train_10, and the model chosen is wc
 The accuracy is 0.6144319294369145
