@@ -1,0 +1,13 @@
+
+ID article_words real_topic predict_topic proba (mean) vote
+
+list:
+
+[[model A, df_key_word_100,vectorizer], [model B, df_key_word_50,vectorizer]]
+
+dict 
+
+{model A: [sports, science], model B: [topics]}
+
+vote_box = [[sport,proba], [sport,proba], money, forex, sport,]
+
