@@ -22,7 +22,7 @@ TRAININGFILE = '../keyword.csv'
 TESTFILE = '../key_word_test.csv'
 TESTSIZE = 0.1
 
-x_label_list = ['article_words','key_word_10', 'key_word_20', 'key_word_50', 'key_word_100']
+x_label_list = ['article_words','key_word_50', 'key_word_100']
 y_label_list = ['topic']
 
 topic_code = {
@@ -38,7 +38,6 @@ topic_code = {
     'SPORTS': 10,
     'IRRELEVANT': 0
 }
-
 
 def preprocess(df, x_label, y_label, split=False):
     '''
@@ -61,6 +60,7 @@ def convert_word(bag_of_word_model, label_model, data_set, x_label, y_label='top
     act_y = label_model.transform(data_set[y_label])
 
     return act_x, act_y
+
 
 def smote_with_vector(df, vector_model, label_model, x_label):
     '''
@@ -102,20 +102,24 @@ def grid_search(vector, model, train_x, train_y):
         'model__class_weight': [None, 'balanced']
     }
 
+    # param_grid = {
+    #     'model__splitter': ['best']
+    # }
+
     grid_search = GridSearchCV(pipe, param_grid, cv=kfold, n_jobs=-1)
     grid_result=grid_search.fit(train_x, train_y)
     return (grid_result.best_estimator_,grid_result.best_score_)
-
 
 def topic_score(model, label_model, data_set, topic_name, x_label):
     test_data_set = data_set[data_set['topic'] == topic_name]
     test_x = test_data_set[x_label]
     test_y = test_data_set['topic']
     pred_y = model.predict(test_x)
+    en_test_y = label_model.transform(test_y)
 
-    f1_score = metrics.f1_score(test_y, pred_y, average='macro')
-    accuarcy = metrics.accuracy_score(test_y, pred_y)
-    recall_score = metrics.recall_score(test_y, pred_y, average='macro')
+    f1_score = metrics.f1_score(en_test_y, pred_y, average='macro')
+    accuarcy = metrics.accuracy_score(en_test_y, pred_y)
+    recall_score = metrics.recall_score(en_test_y, pred_y, average='macro')
 
     return {
         'f1': round(f1_score, 4),
@@ -124,7 +128,7 @@ def topic_score(model, label_model, data_set, topic_name, x_label):
     }
 
 
-def model_score(model, label_model, x_label, test_df=None):
+def model_score(model, label_model, x_label, test_df):
     '''
     model       The dt model
     test_df     provide testing data set or using test file data
@@ -133,10 +137,7 @@ def model_score(model, label_model, x_label, test_df=None):
     print('Topic\tf1\taccuarcy\trecall_score')
     test_report = []
 
-    # if using test file to train
-    if test_df == None:
-        test_df = pd.read_csv(TESTFILE)
-        test_df = preprocess(test_df)
+    test_df = preprocess(test_df, x_label, 'topic')
 
     for topic in topic_code.keys():
         result = [topic]
@@ -147,9 +148,11 @@ def model_score(model, label_model, x_label, test_df=None):
     for record in test_report:
         print(record)
 
+    return test_report
+
 
 def save_job(model, test_report, pre_vector, feature_name):
-    filename = 'model_py/'+pre_vector+'_'+feature_name
+    filename = 'model/'+str(pre_vector)+'_'+feature_name
 
     joblib.dump(model, filename+'.model')
     with open(filename+'.txt', 'w') as fp:
@@ -180,12 +183,12 @@ def model_compile(df, x_label, vector_num):
         print(f'*************************************************************')
         print(f'Now the training set is {x_label}, and the model chosen is count_clf_NB')
         print(f'The accuracy is {count_dt_accuarcy}')
-        return 'count',count_dt_model,label_model,encode_mapping
+        return count_dt_model,label_model,encode_mapping
     else:
         print(f'*************************************************************')
         print(f'Now the training set is {x_label}, and the model chosen is tfidf_clf_NB')
         print(f'The accuracy is {tfidf_dt_accuarcy}')
-        return 'tfidf',tfidf_dt_model,label_model,encode_mapping
+        return tfidf_dt_model,label_model,encode_mapping
 
 def model_evaluate(model, x_label, label_model, df, encode_mapping, vector_num):
     print('Start to evalute', x_label, 'model')
@@ -206,7 +209,7 @@ def model_evaluate(model, x_label, label_model, df, encode_mapping, vector_num):
     print(classification_report(en_test_y, pred_y))
 
     # evalute all the topic performance
-    model_report = model_score(model, x_label)
+    model_report = model_score(model, label_model, x_label, df)
 
     # save current model and performance
     save_job(model, model_report, vector_num, x_label)
@@ -230,15 +233,15 @@ def model_evaluate(model, x_label, label_model, df, encode_mapping, vector_num):
               fontsize=14)
     plt.xlabel("Actual: False positives for y != x", fontsize=12)
     plt.ylabel("Prediction: False negatives for x != y", fontsize=12)
-    #plt.show()
-    plt.savefig('model_py/'+str(vector_num)+'_'+x_label+'.png')
+    plt.show()
+    #plt.savefig('model/'+str(vector_num)+'_'+x_label+'.png')
 
 
 if __name__ == "__main__":
-
     # load data
     df = pd.read_csv(TRAININGFILE)
+    test_df = pd.read_csv(TESTFILE)
     for x_label in x_label_list:
         for vector_num in [1, 2]:
             model, label_model, encode_mapping = model_compile(df, x_label, vector_num)
-            model_evaluate(model, x_label, label_model, df, encode_mapping)
+            model_evaluate(model, x_label, label_model, test_df, encode_mapping, vector_num)
