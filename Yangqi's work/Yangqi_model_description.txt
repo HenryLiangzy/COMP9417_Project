@@ -43,3 +43,32 @@ Accuracy report:
 ['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.5333333333333333, 'f1': 0.23188405797101452, 'recall': 0.17777777777777778}]
 ['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.13461538461538464, 'recall': 0.10144927536231885}]
 ['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+
+
+
+
+
+
+_---------------------------------------------------------------------------------------------------
+
+SVM Proba model 
+
+Predict the model using TFIDF vectorzier. 
+
+parameters setting: C = 10, gamma = 0.0001, decision_function_shape = 'ovo' 
+
+Note: Can predict proba with this model. 
+
+df_test_100
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SHARE LISTINGS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.23333333333333334, 'recall': 0.21875}]
+['HEALTH', {'accuracy': 0.7857142857142857, 'f1': 0.22, 'recall': 0.19642857142857142}]
+
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.6666666666666666, 'f1': 0.2, 'recall': 0.16666666666666666}]
+['MONEY MARKETS', {'accuracy': 0.4927536231884058, 'f1': 0.11003236245954694, 'recall': 0.0821256038647343}]
+['IRRELEVANT', {'accuracy': 0.34962406015037595, 'f1': 0.051810584958217276, 'recall': 0.0349624060150376}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
