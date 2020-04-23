@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import scipy
+import seaborn as sns
 from imblearn.over_sampling import SMOTE
 from sklearn.base import TransformerMixin
 from sklearn import tree
@@ -134,7 +135,7 @@ def model_score(model, label_model, x_label, test_df=None):
 
     # if using test file to train
     if test_df == None:
-        test_df = pd.read_csv(TEST_FILE)
+        test_df = pd.read_csv(TESTFILE)
         test_df = preprocess(test_df)
 
     for topic in topic_code.keys():
@@ -190,7 +191,7 @@ def model_evaluate(model, x_label, label_model, df, encode_mapping, vector_num):
     print('Start to evalute', x_label, 'model')
     test_set = preprocess(df, x_label, 'topic')
     test_x = test_set[x_label]
-    test_y = test_set[y_label]
+    test_y = test_set['topic']
     topics = list(set(test_set['topic']))
 
     # evalute total performance
@@ -211,13 +212,13 @@ def model_evaluate(model, x_label, label_model, df, encode_mapping, vector_num):
     save_job(model, model_report, vector_num, x_label)
 
     # for figure
-    conf_matrix = confusion_matrix(en_test_y, y_pred)
+    conf_matrix = confusion_matrix(en_test_y, pred_y)
     fig1 = plt.figure(figsize=(13,6))
     sns.heatmap(conf_matrix,
     #             square=True,
                 annot=True, # show numbers in each cell
                 fmt='d', # set number format to integer in each cell
-                yticklabels=le.classes_,
+                yticklabels=label_model.classes_,
                 xticklabels=model.classes_,
                 cmap="Blues",
     #             linecolor="k",
