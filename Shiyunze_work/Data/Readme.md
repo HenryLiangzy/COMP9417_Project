@@ -8,22 +8,26 @@
 
 	`pd.DataFrame` containing training data with `label` column inserted into raw dataset
 
-3. label_encoder.joblib
+3. export_list.joblib
+
+	containing a dictionary mapping filenames in this list to corresponding python variable names
+
+4. label_encoder.joblib
 
 	Label encoder fitted to `df_train.topic`
 	
-4. text_train.joblib
+5. text_train.joblib
 	
 	`pd.Series` containing `df_train.article_words`
 
-5. tf-idf.joblib
+6. tf-idf.joblib
 	
 	`TfidfVectorizer` fitted to text_train, no tuning
 
-6. y_train.joblib
+7. y_train.joblib
     
 	`pd.Series` containing `df_train.label`
 
-7. Readme.md
+8. Readme.md
 
 	This file
