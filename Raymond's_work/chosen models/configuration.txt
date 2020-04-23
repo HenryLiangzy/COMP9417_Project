@@ -1,0 +1,37 @@
+﻿rel_clf_tfidf_NB: The best parameters are {'model__alpha': 1, 'model__class_prior': None, 'model__fit_prior': True, 'tfidf__min_df': 1}, with score 0.8327742470538804
+
+
+---------------------------------------------------------------------
+clf_NB_1:
+
+WITH IRRELEVANT KEYWORDS (SMOTE WITH CountVectorizer, tfidf for input text):
+    df_train_full & df_test_50:
+	SHARE LISTING 1
+	DOMESTIC MARKETS 1
+	ARTS CULTURE 1
+	SPORTS 0.95
+	DEFENCE 0.923
+	FOREX MARKETS 0.854
+
+
+-------------------------------------------------------------------------
+clf_NB_2:
+
+WITH IRRELEVANT KEWYWORDS (SMOTE WITH TfidfVectorizer, tfidf for input text):
+    df_train_full & df_test_100:
+	SHARE 1
+	DOMESTIC 1
+	SPORTS 0.95
+	HEALTH 0.857
+	MONEY: 0.855
+	DEFENCE:0.846
+
+
+-------------------------------------------------------------------------
+clf_NB_3:
+
+WITH IRRELEVANT KEWYWORDS (CountVectorizer):
+    df_train_100 & df_test_50:
+	BIOGRAPHIES 0.733
+
+
