@@ -1,0 +1,45 @@
+***
+file name: svm_model1 
+
+SVM Model train with SMOTE variables after Word count vectorzier. 
+
+Predict the model using TFIDF vectorzier. 
+
+parameters setting: C = 10, gamma = 0.0001, decision_function_shape = 'ovo' 
+
+NOTE: CAN NOT PREDICT PROBA using this model
+
+*****
+Test dataset 1 Test 100 
+
+Accuracy report: 
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SHARE LISTINGS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['DEFENCE', {'accuracy': 0.9230769230769231, 'f1': 0.48000000000000004, 'recall': 0.46153846153846156}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.23333333333333334, 'recall': 0.21875}]
+['HEALTH', {'accuracy': 0.7857142857142857, 'f1': 0.22, 'recall': 0.19642857142857142}]
+
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.6666666666666666, 'f1': 0.2, 'recall': 0.16666666666666666}]
+['MONEY MARKETS', {'accuracy': 0.4927536231884058, 'f1': 0.11003236245954694, 'recall': 0.0821256038647343}]
+['IRRELEVANT', {'accuracy': 0.34962406015037595, 'f1': 0.051810584958217276, 'recall': 0.0349624060150376}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
+
+
+******
+Test dataset 2 Test full
+Accuracy report: 
+
+['DOMESTIC MARKETS', {'accuracy': 1.0, 'f1': 1.0, 'recall': 1.0}]
+['SPORTS', {'accuracy': 0.9833333333333333, 'f1': 0.49579831932773105, 'recall': 0.49166666666666664}]
+['FOREX MARKETS', {'accuracy': 0.875, 'f1': 0.3111111111111111, 'recall': 0.2916666666666667}]
+['HEALTH', {'accuracy': 0.8571428571428571, 'f1': 0.30769230769230765, 'recall': 0.2857142857142857}]
+['DEFENCE', {'accuracy': 0.8461538461538461, 'f1': 0.4583333333333333, 'recall': 0.4230769230769231}]
+
+['IRRELEVANT', {'accuracy': 0.7406015037593985, 'f1': 0.09455243580513559, 'recall': 0.0822890559732665}]
+['ARTS CULTURE ENTERTAINMENT', {'accuracy': 0.6666666666666666, 'f1': 0.4, 'recall': 0.3333333333333333}]
+['SHARE LISTINGS', {'accuracy': 0.5714285714285714, 'f1': 0.36363636363636365, 'recall': 0.2857142857142857}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'accuracy': 0.5333333333333333, 'f1': 0.23188405797101452, 'recall': 0.17777777777777778}]
+['MONEY MARKETS', {'accuracy': 0.5072463768115942, 'f1': 0.13461538461538464, 'recall': 0.10144927536231885}]
+['SCIENCE AND TECHNOLOGY', {'accuracy': 0.3333333333333333, 'f1': 0.16666666666666666, 'recall': 0.1111111111111111}]
