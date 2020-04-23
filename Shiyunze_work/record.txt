@@ -1,0 +1,60 @@
+TfidfVectorizer+logistic regression
+
+Recommended model and dataset: 1 or 8
+
+With irrelevant:
+
+1. df_train_50 & df_test_50:
+1)	ARTS CULTURE ENTERTAINMENT	1.0
+2)	DOMESTIC MARKETS 		1.0
+3)	SPORTS 				0.97
+4)	SHARE LISTINGS 			0.86
+
+5)	FOREX MARKETS: 			0.77
+6)	DEFENCE 			0.77
+
+
+2. df_train_50 & df_test_100:
+identical to 1!
+
+3. df_train_50 & df_test_full:
+identical to 1!
+
+
+Only results higher than 70% are listed
+4. df_train_100 & df_test_50:
+1)	ARTS CULTURE ENTERTAINMENT	1.0
+2)	SPORTS				0.9
+3)	SHARE LISTINGS 			0.85	
+
+4)	FOREX MARKETS 			0.79
+5)	DEFENCE 			0.77
+
+5. df_train_100 & df_test_100:
+1)	DOMESTIC MARKETS 		1.0
+2)	SPORTS				0.95
+3)	SHARE LISTINGS 			0.86
+4)	FOREX MARKETS 			0.83
+5) 	DEFENCE				0.77
+6)	HEALTH				0.71
+
+6. df_train_100 & df_test_full
+identical to 5
+
+7. df_train_full & df_test_50
+1)	SPORTS				0.95
+2)	SHARE LISTINGS 			0.71
+3)	IRRELEVANT			0.71
+
+8. df_train_full & df_test_100
+1)	SPORTS				1.0
+2)	SHARE LISTINGS 			0.73
+3)	IRRELEVANT			0.71
+
+9. df_train_full & df_test_full
+1)	DOMESTIC MARKETS 		1.0
+2)	SPORTS				0.93
+3)	SHARE LISTINGS 			0.86
+4)	HEALTH				0.79
+5)	IRRELEVANT			0.77
+6)	DEFENCE				0.77
