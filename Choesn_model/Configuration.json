@@ -11,7 +11,8 @@
             "FOREX MARKETS",
             "DEFENCE"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "clf_NB_1.joblib",
@@ -25,7 +26,8 @@
             "DEFENCE",
             "FOREX MARKETS"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "clf_NB_2.joblib",
@@ -39,7 +41,8 @@
             "MONEY",
             "DEFENCE"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "clf_NB_3.joblib",
@@ -48,7 +51,8 @@
         "topic": [
             "BIOGRAPHIES PERSONALITIES PEOPLE"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "svm_proba_1.joblib",
@@ -63,7 +67,8 @@
             "FOREX MARKETS",
             "BIOGRAPHIES PERSONALITIES PEOPLE"
         ],
-        "preprocess": "True"
+        "preprocess": "True",
+        "level": "2"
     },
     {
         "model_name": "svm_proba_2.joblib",
@@ -75,7 +80,8 @@
             "FOREX MARKETS",
             "HEALTH"
         ],
-        "preprocess": "True"
+        "preprocess": "True",
+        "level": "2"
     },
     {
         "model_name": "1_article_words.model",
@@ -85,7 +91,8 @@
             "SPORTS",
             "IRRELEVANT"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "1_key_word_100.model",
@@ -95,7 +102,8 @@
             "SPORTS",
             "IRRELEVANT"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
     },
     {
         "model_name": "2_article_words.model",
@@ -105,6 +113,17 @@
             "SPORTS",
             "IRRELEVANT"
         ],
-        "preprocess": "False"
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "svm_ir_clf.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_100",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "True",
+        "level": "1"
     }
 ]
