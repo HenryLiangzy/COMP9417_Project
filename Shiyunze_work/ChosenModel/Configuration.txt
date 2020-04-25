@@ -1,6 +1,12 @@
+
 Files in folder:
+
 =========================
-1. tfidf_logi_pipe.joblib
+Trained on full training set, without train_validate split
+=========================
+1. logi_train50_test50_pipe.joblib
+	
+	SMOT with tfidf
 
 	best_params_: {'model__C': 0.1, 'model__multi_class': 'auto', 'vectorizer__min_df': 1}
 
@@ -19,20 +25,44 @@ Files in folder:
 	5)	FOREX MARKETS: 			0.77
 	6)	DEFENCE 			0.77
 
+2. logi_train100_test100_pipe.joblib
 
-2. tfidf+train50_smotwithtfidf.joblib
+	SMOT with tfidf
+	
+	best_params_: {'model__C': 0.1, 'model__multi_class': 'auto', 'vectorizer__min_df': 1}
+
+	best_score_:0.937
+
+	training set: df_train_100
+
+	test set: df_test_100
+
+	results:
+	1)	DOMESTIC MARKETS 		1.0
+	2)	SPORTS 				0.95
+	3)	SHARE LISTINGS 			0.86
+
+	4)	FOREX MARKETS: 			0.83
+	5)	DEFENCE 			0.77
+
+
+=====================================
+With train_validate split
+=====================================
+1. tfidf+train50_smotwithtfidf.joblib
 	trained on train_x_50, tested on validation 50
 	SMOT with tf-idf
 	
-3. tfidf+trainfull_smotwithtfidf.joblib
+	
+2. tfidf+trainfull_smotwithtfidf.joblib
 	trained on train_x_full, tested on validation full
 	SMOT with tf-idf
 
-4. count+train100_smotwithtfidf.joblib
+3. count+train100_smotwithtfidf.joblib
 	trained on train_x_100, tested on validation 100
 	SMOT with CountVectorizer
 
 
 =========================
-** Need to SMOT and inverse_transform before tf-idf **  
+** All models need to SMOT and inverse_transform first **  
 =========================
