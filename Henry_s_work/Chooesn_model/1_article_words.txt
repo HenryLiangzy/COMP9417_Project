@@ -10,3 +10,11 @@ Topic	f1	accuarcy	recall_score
 ['BIOGRAPHIES PERSONALITIES PEOPLE', {'f1': 0.0392, 'accuarcy': 0.1333, 'recall_score': 0.0222}]
 ['DOMESTIC MARKETS', {'f1': 0.0, 'accuarcy': 0.0, 'recall_score': 0.0}]
 ['SCIENCE AND TECHNOLOGY', {'f1': 0.0, 'accuarcy': 0.0, 'recall_score': 0.0}]
+
+
+Vectorizer before SMOTE: TF-IDF
+Training Data: article_words
+Best topic: [
+    'SPORTS': 0.9333,
+    'IRRELEVANT': 0.7331,
+]
