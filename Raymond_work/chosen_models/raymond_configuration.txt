@@ -12,6 +12,7 @@ WITH IRRELEVANT KEYWORDS (SMOTE WITH CountVectorizer, tfidf for input text):
 	SPORTS 0.95
 	DEFENCE 0.923
 	FOREX MARKETS 0.854
+    SCIENCE 0.33
 
 
 -------------------------------------------------------------------------
@@ -25,6 +26,7 @@ WITH IRRELEVANT KEWYWORDS (SMOTE WITH TfidfVectorizer, tfidf for input text):
 	HEALTH 0.857
 	MONEY: 0.855
 	DEFENCE:0.846
+    
 
 
 -------------------------------------------------------------------------
