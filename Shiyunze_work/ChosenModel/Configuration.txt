@@ -20,6 +20,19 @@ Files in folder:
 	6)	DEFENCE 			0.77
 
 
+2. tfidf+train50_smotwithtfidf.joblib
+	trained on train_x_50, tested on validation 50
+	SMOT with tf-idf
+	
+3. tfidf+trainfull_smotwithtfidf.joblib
+	trained on train_x_full, tested on validation full
+	SMOT with tf-idf
+
+4. count+train100_smotwithtfidf.joblib
+	trained on train_x_100, tested on validation 100
+	SMOT with CountVectorizer
+
+
 =========================
 ** Need to SMOT and inverse_transform before tf-idf **  
 =========================
