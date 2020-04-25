@@ -1,0 +1,12 @@
+Topic	f1	accuarcy	recall_score
+['SPORTS', {'f1': 0.4828, 'accuarcy': 0.9333, 'recall_score': 0.4667}]
+['IRRELEVANT', {'f1': 0.0769, 'accuarcy': 0.7331, 'recall_score': 0.0666}]
+['SHARE LISTINGS', {'f1': 0.3636, 'accuarcy': 0.5714, 'recall_score': 0.2857}]
+['DEFENCE', {'f1': 0.175, 'accuarcy': 0.5385, 'recall_score': 0.1346}]
+['MONEY MARKETS', {'f1': 0.165, 'accuarcy': 0.4928, 'recall_score': 0.1232}]
+['FOREX MARKETS', {'f1': 0.1571, 'accuarcy': 0.4583, 'recall_score': 0.1146}]
+['HEALTH', {'f1': 0.12, 'accuarcy': 0.4286, 'recall_score': 0.0857}]
+['ARTS CULTURE ENTERTAINMENT', {'f1': 0.25, 'accuarcy': 0.3333, 'recall_score': 0.1667}]
+['BIOGRAPHIES PERSONALITIES PEOPLE', {'f1': 0.0392, 'accuarcy': 0.1333, 'recall_score': 0.0222}]
+['DOMESTIC MARKETS', {'f1': 0.0, 'accuarcy': 0.0, 'recall_score': 0.0}]
+['SCIENCE AND TECHNOLOGY', {'f1': 0.0, 'accuarcy': 0.0, 'recall_score': 0.0}]
