@@ -127,8 +127,8 @@
         "preprocess": "True",
         "level": "1",
         "encoding": {
-            "False": "0",
-            "True": "1"
+            "False": "1",
+            "True": "0"
         }
     },
     {
