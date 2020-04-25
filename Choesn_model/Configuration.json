@@ -125,5 +125,15 @@
         ],
         "preprocess": "True",
         "level": "1"
+    },
+    {
+        "model_name": "rel_clf_tfidf_NB.joblib",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "False",
+        "level": "1"
     }
 ]
