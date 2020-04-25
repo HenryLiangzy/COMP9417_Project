@@ -115,5 +115,15 @@
         ],
         "preprocess": "False",
         "level": "2"
+    },
+    {
+        "model_name": "svm_ir_clf.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_100",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "True",
+        "level": "1"
     }
 ]
