@@ -39,7 +39,7 @@
             "DOMESTIC MARKETS",
             "SPORTS",
             "HEALTH",
-            "MONEY",
+            "MONEY MARKETS",
             "DEFENCE"
         ],
         "preprocess": "False",
@@ -125,7 +125,11 @@
             "IRRELEVANT"
         ],
         "preprocess": "True",
-        "level": "1"
+        "level": "1",
+        "output": {
+            "False": "0",
+            "True": "1"
+        }
     },
     {
         "model_name": "rel_clf_tfidf_NB.joblib",
@@ -135,6 +139,10 @@
             "IRRELEVANT"
         ],
         "preprocess": "False",
-        "level": "1"
+        "level": "1",
+        "output": {
+            "0": "0",
+            "1": "1"
+        }
     }
 ]
