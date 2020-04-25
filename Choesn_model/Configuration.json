@@ -24,7 +24,8 @@
             "ARTS CULTURE ENTERTAINMENT",
             "SPORTS",
             "DEFENCE",
-            "FOREX MARKETS"
+            "FOREX MARKETS",
+            "SCIENCE"
         ],
         "preprocess": "False",
         "level": "2"
