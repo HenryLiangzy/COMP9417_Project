@@ -136,5 +136,15 @@
         ],
         "preprocess": "False",
         "level": "1"
+    },
+    {
+        "model_name": "best_logi.joblib",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "False",
+        "level": "1"
     }
 ]
