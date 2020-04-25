@@ -1,0 +1,110 @@
+[
+    {
+        "model_name": "tfidf_logi_pipe.joblib",
+        "training_set": "key_word_50",
+        "test_set": "key_word_50",
+        "topic": [
+            "ARTS CULTURE ENTERTAINMENT",
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "SHARE LISTINGS",
+            "FOREX MARKETS",
+            "DEFENCE"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "clf_NB_1.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_50",
+        "topic": [
+            "SHARE LISTING",
+            "DOMESTIC MARKETS",
+            "ARTS CULTURE ENTERTAINMENT",
+            "SPORTS",
+            "DEFENCE",
+            "FOREX MARKETS"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "clf_NB_2.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_100",
+        "topic": [
+            "SHARE LISTING",
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "HEALTH",
+            "MONEY",
+            "DEFENCE"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "clf_NB_3.joblib",
+        "training_set": "key_word_100",
+        "test_set": "key_word_50",
+        "topic": [
+            "BIOGRAPHIES PERSONALITIES PEOPLE"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "svm_proba_1.joblib",
+        "training_set": "key_word_100",
+        "test_set": "key_word_100",
+        "topic": [
+            "DOMESTIC MARKETS",
+            "SHARE LISTINGS",
+            "ARTS CULTURE ENTERTAINMENT",
+            "SPORTS",
+            "DEFENCE",
+            "FOREX MARKETS",
+            "BIOGRAPHIES PERSONALITIES PEOPLE"
+        ],
+        "preprocess": "True"
+    },
+    {
+        "model_name": "svm_proba_2.joblib",
+        "training_set": "key_word_100",
+        "test_set": "article_words",
+        "topic": [
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "FOREX MARKETS",
+            "HEALTH"
+        ],
+        "preprocess": "True"
+    },
+    {
+        "model_name": "1_article_words.model",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "SPORTS",
+            "IRRELEVANT"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "1_key_word_100.model",
+        "training_set": "key_word_100",
+        "test_set": "key_word_100",
+        "topic": [
+            "SPORTS",
+            "IRRELEVANT"
+        ],
+        "preprocess": "False"
+    },
+    {
+        "model_name": "2_article_words.model",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "SPORTS",
+            "IRRELEVANT"
+        ],
+        "preprocess": "False"
+    }
+]
