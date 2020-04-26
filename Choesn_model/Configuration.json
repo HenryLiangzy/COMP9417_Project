@@ -19,13 +19,13 @@
         "training_set": "article_words",
         "test_set": "key_word_50",
         "topic": [
-            "SHARE LISTING",
+            "SHARE LISTINGS",
             "DOMESTIC MARKETS",
             "ARTS CULTURE ENTERTAINMENT",
             "SPORTS",
             "DEFENCE",
             "FOREX MARKETS",
-            "SCIENCE"
+            "SCIENCE AND TECHNOLOGY"
         ],
         "preprocess": "False",
         "level": "2"
@@ -35,7 +35,7 @@
         "training_set": "article_words",
         "test_set": "key_word_100",
         "topic": [
-            "SHARE LISTING",
+            "SHARE LISTINGS",
             "DOMESTIC MARKETS",
             "SPORTS",
             "HEALTH",
