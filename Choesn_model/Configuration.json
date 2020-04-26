@@ -122,7 +122,7 @@
             "IRRELEVANT"
         ],
         "preprocess": "True",
-        "level": "3",
+        "level": "1",
         "encoding": {
             "False": "1",
             "True": "0"
@@ -150,7 +150,7 @@
             "IRRELEVANT"
         ],
         "preprocess": "False",
-        "level": "3",
+        "level": "1",
         "encoding": {
             "6": "0",
             "0": "1",
