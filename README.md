@@ -6,7 +6,7 @@ For reference paper link [click here](https://docs.google.com/spreadsheets/d/1ls
 
 ---
 ## TODO list
-> - [ ] Project implement
+> - [x] Project implement
 > > - [x] Project Descussion 
 > > - [x] Reference Reading
 > > - [x] Algorithm Implement
@@ -15,8 +15,8 @@ For reference paper link [click here](https://docs.google.com/spreadsheets/d/1ls
 > > > - [x] Decision Tree
 > > > - [x] TF-IDF Vector
 > > > - [x] Keras
-> - [ ] Report
-> - [ ] Submit Project
+> - [x] Report
+> - [x] Submit Project
 
 ---
 
@@ -35,10 +35,10 @@ git clone https://github.com/HenryLiangzy/COMP9417_Project.git
 ```
 
 ## Division of work
-* @raymondluk1995: TF-IDF Vector, Bayes Classification
+* @raymondluk1995: Bayes Classification
 * @BradWWHU: Keras
 * @zyq0711: SVM
-* @HenryLiangzy: Skating Water (Decision Tree)
+* @HenryLiangzy: Decision Tree
 * @syzxy: Gradient Descent
   
 ### Machine learing algorithm for this project
@@ -46,7 +46,7 @@ git clone https://github.com/HenryLiangzy/COMP9417_Project.git
 2. SVM
 3. Decisioin Tree 
 4. Gradient Descent
-5. TF-IDF Vector
+5. TF-IDFVectorizer, CounterVectorizer
 6. Keras
 
 # LICENSE
