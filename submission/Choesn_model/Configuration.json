@@ -1,0 +1,168 @@
+[
+    {
+        "model_name": "tfidf_logi_pipe.joblib",
+        "training_set": "key_word_50",
+        "test_set": "key_word_50",
+        "topic": [
+            "ARTS CULTURE ENTERTAINMENT",
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "SHARE LISTINGS",
+            "FOREX MARKETS",
+            "DEFENCE"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "clf_NB_1.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_50",
+        "topic": [
+            "SHARE LISTINGS",
+            "DOMESTIC MARKETS",
+            "ARTS CULTURE ENTERTAINMENT",
+            "SPORTS",
+            "DEFENCE",
+            "FOREX MARKETS",
+            "SCIENCE AND TECHNOLOGY"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "clf_NB_2.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_100",
+        "topic": [
+            "SHARE LISTINGS",
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "HEALTH",
+            "MONEY MARKETS",
+            "DEFENCE"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "clf_NB_3.joblib",
+        "training_set": "key_word_100",
+        "test_set": "key_word_50",
+        "topic": [
+            "BIOGRAPHIES PERSONALITIES PEOPLE"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "svm_proba_1.joblib",
+        "training_set": "key_word_100",
+        "test_set": "key_word_100",
+        "topic": [
+            "DOMESTIC MARKETS",
+            "SHARE LISTINGS",
+            "ARTS CULTURE ENTERTAINMENT",
+            "SPORTS",
+            "DEFENCE",
+            "FOREX MARKETS",
+            "BIOGRAPHIES PERSONALITIES PEOPLE"
+        ],
+        "preprocess": "True",
+        "level": "2"
+    },
+    {
+        "model_name": "svm_proba_2.joblib",
+        "training_set": "key_word_100",
+        "test_set": "article_words",
+        "topic": [
+            "DOMESTIC MARKETS",
+            "SPORTS",
+            "FOREX MARKETS",
+            "HEALTH"
+        ],
+        "preprocess": "True",
+        "level": "2"
+    },
+    {
+        "model_name": "1_article_words.model",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "SPORTS"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "1_key_word_100.model",
+        "training_set": "key_word_100",
+        "test_set": "key_word_100",
+        "topic": [
+            "SPORTS"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "2_article_words.model",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "SPORTS"
+        ],
+        "preprocess": "False",
+        "level": "2"
+    },
+    {
+        "model_name": "svm_ir_clf.joblib",
+        "training_set": "article_words",
+        "test_set": "key_word_100_1",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "True",
+        "level": "1",
+        "encoding": {
+            "False": "1",
+            "True": "0"
+        }
+    },
+    {
+        "model_name": "rel_clf_tfidf_NB.joblib",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "False",
+        "level": "1",
+        "encoding": {
+            "0": "0",
+            "1": "1"
+        }
+    },
+    {
+        "model_name": "best_logi.joblib",
+        "training_set": "article_words",
+        "test_set": "article_words",
+        "topic": [
+            "IRRELEVANT"
+        ],
+        "preprocess": "False",
+        "level": "1",
+        "encoding": {
+            "6": "0",
+            "0": "1",
+            "1": "1",
+            "2": "1",
+            "3": "1",
+            "4": "1",
+            "5": "1",
+            "7": "1",
+            "8": "1",
+            "9": "1",
+            "10": "1"
+        }
+    }
+]
